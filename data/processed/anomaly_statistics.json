@@ -1,0 +1,7 @@
+{
+  "total_samples": 9357,
+  "iso_anomalies": 468,
+  "svm_anomalies": 468,
+  "combined_anomalies": 717,
+  "anomaly_rate_combined": 7.662712407823021
+}
