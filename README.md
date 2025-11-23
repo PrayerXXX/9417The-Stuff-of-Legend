@@ -25,8 +25,7 @@ This project performs comprehensive data exploration, preprocessing, anomaly det
 │   ├── 01_eda_and_preprocessing.ipynb
 │   ├── 02_anomaly_detection.ipynb
 │   ├── 03_feature_engineering.ipynb
-│   ├── classification_final.ipynb
-│   ├── classification_LightGBM+LogisticRegression+MLP.ipynb
+│   ├── Classification_feature_importance.ipynb
 │   └── regression_models.ipynb
 └── README.md
 ```
@@ -65,16 +64,14 @@ This project performs comprehensive data exploration, preprocessing, anomaly det
 - Feature transformation and combination
 - Feature selection and optimization
 
-### 4. Classification Tasks
+### 4. Classification Task (`Classification_feature_importance.ipynb`)
 
-#### `classification_final.ipynb`
-Final classification model predicting future CO concentration levels (low/mid/high)
+Classification models predicting future CO concentration levels (low/mid/high):
+- **Logistic Regression** - Baseline linear classifier
+- **LightGBM** - Gradient boosting trees for tabular data
+- **MLP** - Multi-Layer Perceptron neural network
 
-#### `classification_LightGBM+LogisticRegression+MLP.ipynb`
-Multiple classification algorithms:
-- LightGBM
-- Logistic Regression
-- MLP (Multi-Layer Perceptron)
+Includes comprehensive model evaluation, confusion matrices, and **LightGBM feature importance analysis** to identify the most predictive features.
 
 ### 5. Regression Models (`regression_models.ipynb`)
 
@@ -111,7 +108,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn scipy statsmodels light
    ```
 
 4. **Model Training**
-   - Classification: Run `classification_final.ipynb` or `classification_LightGBM+LogisticRegression+MLP.ipynb`
+   - Classification: Run `Classification_feature_importance.ipynb`
    - Regression: Run `regression_models.ipynb`
 
 ## @@@ Dataset
